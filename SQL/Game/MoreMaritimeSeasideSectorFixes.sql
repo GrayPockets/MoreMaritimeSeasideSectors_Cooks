@@ -68,6 +68,11 @@ INSERT INTO "ModifierArguments"
 	(	"ModifierId",								"Name",			"Type",				"Value",				"Extra",	"SecondExtra"	)
 VALUES
 	(	'ROCKBAND_SURF_ROCK_WATERFRONT',			'DistrictType',	'ARGTYPE_IDENTITY',	'DISTRICT_WATERFRONT',	NULL,		NULL			),
-	(	'ROCKBAND_SURF_ROCK_WATERFRONT',			'Amount',		'ARGTYPE_IDENTITY',	2,						NULL,		NULL			),
+	(	'ROCKBAND_SURF_ROCK_WATERFRONT',			'Amount',		'ARGTYPE_IDENTITY',	1,						NULL,		NULL			),
 	(	'ROCKBAND_SURF_ROCK_WATERFRONT_MODIFIER',	'DistrictType',	'ARGTYPE_IDENTITY',	'DISTRICT_WATERFRONT',	NULL,		NULL			),
 	(	'ROCKBAND_SURF_ROCK_WATERFRONT_MODIFIER',	'Amount',		'ARGTYPE_IDENTITY',	500,					NULL,		NULL			);
+
+INSERT INTO "Building_TourismBombs_XP2O
+	(	"BuildingType",				"TourismBombValue"	)
+VALUES
+	(	'BUILDING_WTR_BOARDWALK',	500					);
