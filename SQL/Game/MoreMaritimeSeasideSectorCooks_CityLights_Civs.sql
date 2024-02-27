@@ -1,4 +1,4 @@
--- Arsenals should give adjacency bonuses to Rural Communities, similar to Encampments (350)
+-- Arsenals should give adjacency bonuses to Rural Communities, similar to Encampments
 
 INSERT INTO "District_Adjacencies"
 	(	"DistrictType",					"YieldChangeID"		)

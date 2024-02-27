@@ -1,8 +1,8 @@
-# GrayPockets - More Maritime: Seaside Sectors - Fixes
+# GrayPockets - More Maritime: Seaside Sectors - Cooks
 
 ## Description
 
-This mod fixes several items in "More Maritime: Seaside Sectors"
+This mod cooks several items in "More Maritime: Seaside Sectors"
 
 * Thanh are mutually exclusive with Arsenals
 * City-State AIs use Arsenals and Waterfronts
