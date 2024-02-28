@@ -7,7 +7,7 @@
     <ProjectGuid>31f4b565-2a8d-488a-85ac-16af3323411e</ProjectGuid>
     <ModVersion>1</ModVersion>
     <Teaser>Cooks for More Maritime: Seaside Sectors</Teaser>
-    <Description>This mod cooks several items in "More Maritime: Seaside Sectors"[NEWLINE][NEWLINE][ICON_BULLET] Thanh are mutually exclusive with Arsenals[NEWLINE][ICON_BULLET] City-State AIs use Arsenals and Waterfronts[NEWLINE][ICON_BULLET] Integrated Space Cell requires a Naval Academy instead of a Seaport[NEWLINE][ICON_BULLET] Rockbands with the Surf Band promotion perform at Waterfronts instead of Harbors[NEWLINE][ICON_BULLET] City Lights: Arsenals give adjacency bonuses to Rural Communities, similar to Encampments[NEWLINE][NEWLINE]Mod Support[NEWLINE][ICON_BULLET] CIVILIZATION VI: [COLOR:ResGoldLabelCS]CITY LIGHTS[ENDCOLOR]</Description>
+    <Description>This mod is now empty; all functionality has been integrated into "More Maritime: Seaside Sectors"</Description>
     <Authors>GrayPockets</Authors>
     <SpecialThanks>Albro</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
@@ -21,19 +21,13 @@
   <Dependency type="Dlc" title="Expansion: Rise and Fall" id="1B28771A-C749-434B-9053-D1380C553DE9" />
   <Dependency type="Dlc" title="Expansion: Gathering Storm" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
   <Dependency type="Mod" title="More Maritime: Seaside Sectors" id="58ecce8a-d3df-430a-b135-280908153662" />
-  <Reference type="Mod" title="CIVILIZATION VI: [COLOR:ResGoldLabelCS]CITY LIGHTS[ENDCOLOR]" id="95b955fc-2dd1-41c5-989e-0265d98a28bd" />
 </Associations>]]></AssociationData>
-    <InGameActionData><![CDATA[<InGameActions><UpdateText id="Text_MoreMaritimeSeasideSectorCooks"><Properties><LoadOrder>1</LoadOrder></Properties><File>SQL/Text/MoreMaritimeSeasideSectorCooks.sql</File></UpdateText><UpdateText id="Text_MoreMaritimeSeasideSectorCooks_CityLights"><Properties><LoadOrder>1</LoadOrder></Properties><Criteria>ModInUse City Lights</Criteria><File>SQL/Text/MoreMaritimeSeasideSectorCooks_CityLights.sql</File></UpdateText><UpdateDatabase id="Game_MoreMaritimeSeasideSectorCooks"><Properties><LoadOrder>1</LoadOrder></Properties><File>SQL/Game/MoreMaritimeSeasideSectorCooks.sql</File></UpdateDatabase><UpdateDatabase id="Game_MoreMaritimeSeasideSectorCooks_CityLights"><Properties><LoadOrder>350</LoadOrder></Properties><Criteria>ModInUse City Lights</Criteria><File>SQL/Game/MoreMaritimeSeasideSectorCooks_CityLights.sql</File></UpdateDatabase><UpdateDatabase id="Game_MoreMaritimeSeasideSectorCooks_CityLights_CivsMinimal"><Properties><LoadOrder>350</LoadOrder></Properties><Criteria>ModInUse City Lights</Criteria><Criteria>CL_Civ_Changes_Minimal</Criteria><File>SQL/Game/MoreMaritimeSeasideSectorCooks_CityLights_Civs.sql</File></UpdateDatabase><UpdateDatabase id="Game_MoreMaritimeSeasideSectorCooks_CityLights_CivsFull"><Properties><LoadOrder>350</LoadOrder></Properties><Criteria>ModInUse City Lights</Criteria><Criteria>CL_Civ_Changes_Full</Criteria><File>SQL/Game/MoreMaritimeSeasideSectorCooks_CityLights_Civs.sql</File></UpdateDatabase></InGameActions>]]></InGameActionData>
-    <ActionCriteriaData><![CDATA[<ActionCriteria><Criteria id="ModInUse City Lights"><ModInUse>95b955fc-2dd1-41c5-989e-0265d98a28bd</ModInUse></Criteria><Criteria id="CL_Civ_Changes_Minimal"><ConfigurationValueMatches><ConfigurationId>CL_INCLUDE_CIV_CHANGES</ConfigurationId><Group>Game</Group><Value>Minimal</Value></ConfigurationValueMatches></Criteria><Criteria id="CL_Civ_Changes_Full"><ConfigurationValueMatches><ConfigurationId>CL_INCLUDE_CIV_CHANGES</ConfigurationId><Group>Game</Group><Value>Full Integration</Value></ConfigurationValueMatches></Criteria></ActionCriteria>]]></ActionCriteriaData>
+    <InGameActionData><![CDATA[<InGameActions></InGameActions>]]></InGameActionData>
+    <ActionCriteriaData><![CDATA[<ActionCriteria></ActionCriteria>]]></ActionCriteriaData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
   </PropertyGroup>
-  <ItemGroup>
-    <Folder Include="SQL" />
-    <Folder Include="SQL\Game" />
-    <Folder Include="SQL\Text" />
-  </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore">
       <SubType>Content</SubType>
@@ -50,21 +44,6 @@
     <None Include="README.md">
       <SubType>Content</SubType>
     </None>
-    <Content Include="SQL\Game\MoreMaritimeSeasideSectorCooks.sql">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="SQL\Game\MoreMaritimeSeasideSectorCooks_CityLights.sql">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="SQL\Game\MoreMaritimeSeasideSectorCooks_CityLights_Civs.sql">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="SQL\Text\MoreMaritimeSeasideSectorCooks.sql">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="SQL\Text\MoreMaritimeSeasideSectorCooks_CityLights.sql">
-      <SubType>Content</SubType>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
 </Project>
